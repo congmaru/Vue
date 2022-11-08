@@ -1,41 +1,12 @@
 <template>
   <div id="app">
-    <h1>{{ message }}</h1>
-    <h2>입력된 문자의 길이는 {{ messageLength }}</h2>
-    <input
-    type="text"
-    @keyup.enter="changeMessage"
-    v-model="inputData"
-    >
+    <nav>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </nav>
+    <router-view/>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'App',
-  data() {
-    return {
-      inputData: null
-    }
-  },
-  components: {
-  },
-  computed: {
-    message() {
-      return this.$store.state.message
-    },
-    messageLength() {
-      return this.$store.getters.messageLength
-    }
-  },
-  methods: {
-    changeMessage() {
-      const newMessage = this.inputData
-      this.$store.dispatch('changeMessage', newMessage)
-    }
-  }
-}
-</script>
 
 <style>
 #app {
@@ -44,6 +15,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
