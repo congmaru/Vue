@@ -32,7 +32,7 @@ export default {
 .line {
   position: absolute;
   margin-top: 520px;
-  margin-left: 100px;
+  margin-left: 260px;
 
 
   color: lightgray;
