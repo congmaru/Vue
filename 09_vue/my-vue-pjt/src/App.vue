@@ -1,7 +1,8 @@
 <template>
   <div id="app">
+    <h1 style="font-family: 'Rubik Bubbles', cursive; margin-top:20px ">Tweedles Movie</h1>
     <nav>
-      <router-link to="/movies">MovieView</router-link> |
+      <router-link to="/">MovieView</router-link> |
       <router-link to="/random">RandomView</router-link> |
       <router-link to="/watch-list">WatchListView</router-link>
     </nav>
@@ -19,7 +20,8 @@
 }
 
 nav {
-  padding: 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 nav a {
@@ -30,4 +32,5 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
 </style>

@@ -1,17 +1,20 @@
 <template>
-  <div class="about">
-    <h1>RANDOM</h1>
+  <div class="container">
+  <div class="d-flex justify-content-center">
     <!-- {{ randomMovie }} -->
-
-    <div class="card" style="width: 18rem;">
+    <div class="card shadow-sm p-3 mb-5 bg-body rounded" style="width: 30rem;">
     <img :src="posterPath" class="card-img-top">
     <div class="card-body">
       <h5 class="card-title">{{ randomMovie.original_title }}</h5>
+      <hr>
       <p class="card-text">{{ randomMovie.overview }}</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
     </div>
-</div>
+    </div>
   </div>
+  </div>
+
+  
 </template>
 
 <script>

@@ -7,7 +7,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     // Key: '164f8d9d4790c9d3f59a0cbda5d95c69',
-    url: 'https://api.themoviedb.org/3/movie/top_rated?api_key=164f8d9d4790c9d3f59a0cbda5d95c69&language=ko-KR',
+    url: 'https://api.themoviedb.org/3/movie/top_rated?api_key=<<key>>&language=ko-KR',
     movies: null,
     wishlist: [],
   },

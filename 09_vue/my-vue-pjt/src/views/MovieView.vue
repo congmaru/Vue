@@ -1,11 +1,13 @@
 <template>
-  <div class="row ">
+  <div class="row d-flex justify-content-center">
     <MovieCard
     v-for="movie in getMovieData "
     :key=movie.id
     :movie=movie
+    id="card"
     />
     <!-- {{getMovieData}} -->
+    <h5 id="h5">@created by tweedles</h5>
   </div>
 </template>
 
@@ -32,3 +34,13 @@ export default {
   }
 }
 </script>
+
+<style>
+#card {
+  padding: 5px;
+}
+
+#h5 {
+  color: lightgray;
+}
+</style>

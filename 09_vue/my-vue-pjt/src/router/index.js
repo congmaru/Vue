@@ -8,7 +8,7 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/movies',
+    path: '/',
     name: 'MovieView',
     component: MovieView
   },
