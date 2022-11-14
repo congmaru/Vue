@@ -34,6 +34,7 @@ export default new Vuex.Store({
         params})
       .then((response) => {
         const items = response.data.items
+        console.log(items)
         context.commit('SEND_DATA',items)
       })
       .catch((error) => {

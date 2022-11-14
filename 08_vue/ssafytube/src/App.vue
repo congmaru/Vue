@@ -17,10 +17,22 @@
       v-model="inputData">
       <button>검색</button>
     </form> -->
-    <div class="d-flex justify-content-center" id="mainbox">
-      <VideoView class="col-8 shadow-lg p-3 mb-5 bg-white rounded"/>
-      <VideoList class="col-4 "/>
-    </div>
+    <b-container class="bv-example-row">
+      <b-row>
+      <b-col cols="12" lg="8" >
+      <VideoView 
+      id="mainbox"
+      class="shadow-lg p-3 mb-5 bg-white rounded"
+      />
+      </b-col>
+      <b-col cols="12" lg="4"><VideoList
+      /></b-col>
+      </b-row>
+    </b-container>
+    <!-- <div class="d-flex justify-content-center" id="mainbox">
+      <VideoView class="col-lg-8 shadow-lg p-3 mb-5 bg-white rounded"/>
+      <VideoList class="col-lg-4"/>
+    </div> -->
   </div>
 </template>
 
